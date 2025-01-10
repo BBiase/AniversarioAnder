@@ -1,0 +1,217 @@
+body {
+    background-image: url('../img/aniversario\ background.jpeg'); /* Verifique se o caminho da imagem está correto */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-attachment: fixed; /* Garante que a imagem fique fixa no lugar ao rolar a página */
+    color: #FFF; /* Cor branca para melhor contraste */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 0px #000; /* Adiciona uma borda preta */
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #FFD700; /* Cor dourada para combinar com o fundo */
+    text-align: center;
+    text-shadow: 2px 2px 0px #000; /* Adiciona uma borda preta */
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 2px 2px 0px #000; /* Sombra para melhor legibilidade e borda preta */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px #000; /* Adiciona uma borda preta */
+}
+
+.next-btn {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Cor dourada */
+    color: #333; /* Texto escuro para contraste */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.next-btn:hover {
+    background-color: #FFC107; /* Tom mais claro de dourado */
+}
+.wanted-poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+.perfil-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FFD700; /* Borda de destaque */
+    margin-right: 20px;
+}
+
+.bio {
+    text-align: left;
+}
+
+.bio h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #FFD700; /* Cor dourada */
+}
+
+.bio p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+.caption {
+    font-size: 1.2em;
+    color: #FFD700; /* Cor dourada */
+    margin-top: 20px;
+}
+
+
+.section {
+    display: none;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px; /* Centraliza e limita a largura */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+.section.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+.memory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.memory-img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #FFD700; /* Borda de destaque */
+    margin-bottom: 20px;
+}
+#popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Inicialmente invisível e pequeno */
+    width: 80%;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transições para animação */
+}
+#popup.show {
+    display: flex;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+#popup img {
+    width: 90%;
+    max-width: 150px;
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#popup audio {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+#popup audio:hover {
+    box-shadow: 0px 0px 20px 4px #222;
+}
+#popup h1, #popup p {
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    margin: 10px;
+    font-size: 1em;
+}
+#gift {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9998;
+    animation: shake 1s infinite;
+}
+.videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.videos video {
+    width: 300px;
+    height: auto;
+    border: 3px solid #FFD700; /* Borda de destaque */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0); }
+    10% { transform: translate(-2px, -2px) rotate(-2deg); }
+    20% { transform: translate(2px, 2px) rotate(2deg); }
+    30% { transform: translate(-2px, 2px) rotate(-2deg); }
+    40% { transform: translate(2px, -2px) rotate(2deg); }
+    50% { transform: translate(-2px, -2px) rotate(-2deg); }
+    60% { transform: translate(2px, 2px) rotate(2deg); }
+    70% { transform: translate(-2px, 2px) rotate(-2deg); }
+    80% { transform: translate(2px, -2px) rotate(2deg); }
+    90% { transform: translate(-2px, -2px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0); }
+}
