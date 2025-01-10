@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário do Cachaceiro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Bem-Vindo ao site Makoto House</h1>
+    </header>
+    <main id="main-content">
+        <section id="section1" class="section active">
+            <h2>Makoto House Premium</h2>
+            <p>Aqui vamos relembrar momentos especiais e engraçados! Sente-se, relaxe e aproveite esta jornada de memórias.</p>
+            <button class="next-btn" onclick="nextSection('section2')">NEXT</button>
+        </section>
+        <section id="section2" class="section hidden">
+            <h2>Wanted: Anderson</h2>
+            <div class="wanted-poster">
+                <img src="img/Ander Perfil.jpeg" alt="Foto de Perfil" class="perfil-img">
+                <div class="bio">
+                    <h3>Procurado por:</h3>
+                    <p>Dirigir Bebado</p>
+                    <p>Beber em excesso</p>
+                    <p>Trabalhar Demais</p>
+                </div>
+            </div>
+            <p class="caption">Se encontrar, devolver a Makoto House urgente.<br/> Recompensa: 2 reais!</p>
+            <button class="next-btn" onclick="nextSection('section3')">NEXT</button>
+        </section>
+        <section id="section3" class="section hidden">
+            <h2>Momento 1</h2>
+            <div class="memory">
+                <img src="img/foto1.jpg" alt="Foto de Memória 1" class="memory-img">
+                <p>Este foi um momento inesquecível que tivemos juntos!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section4')">NEXT</button>
+        </section>
+        <section id="section4" class="section hidden">
+            <h2>Momento 2</h2>
+            <div class="memory">
+                <img src="img/foto2.jpg" alt="Foto de Memória 2" class="memory-img">
+                <p>Mais um dia incrível que ficará para sempre na memória!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section5')">NEXT</button>
+        </section>
+        <section id="section5" class="section hidden">
+            <h2>Momento 3</h2>
+            <div class="memory">
+                <img src="img/foto3.jpg" alt="Foto de Memória 3" class="memory-img">
+                <p>Esse foi um dia especial que nunca esqueceremos!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section6')">NEXT</button>
+        </section>
+        <section id="section6" class="section hidden">
+            <h2>Momento 4</h2>
+            <div class="memory">
+                <img src="img/foto4.jpg" alt="Foto de Memória 4" class="memory-img">
+                <p>Lembrança de um dia muito engraçado e divertido!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section7')">NEXT</button>
+        </section>
+        <section id="section7" class="section hidden">
+            <h2>Momento 5</h2>
+            <div class="memory">
+                <img src="img/foto5.jpg" alt="Foto de Memória 5" class="memory-img">
+                <p>Quem poderia esquecer esse dia?</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section8')">NEXT</button>
+        </section>
+        <section id="section8" class="section hidden">
+            <h2>Momento 6</h2>
+            <div class="memory">
+                <img src="img/foto6.jpg" alt="Foto de Memória 6" class="memory-img">
+                <p>Aquela festa que foi uma loucura!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section9')">NEXT</button>
+        </section>
+        <section id="section9" class="section hidden">
+            <h2>Momento 7</h2>
+            <div class="memory">
+                <img src="img/foto7.jpg" alt="Foto de Memória 7" class="memory-img">
+                <p>Uma lembrança que sempre trará um sorriso.</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section10')">NEXT</button>
+        </section>
+        <section id="section10" class="section hidden">
+            <h2>Momento 8</h2>
+            <div class="memory">
+                <img src="img/foto8.jpg" alt="Foto de Memória 8" class="memory-img">
+                <p>Um dia cheio de risadas e diversão!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section11')">NEXT</button>
+        </section>
+        <section id="section11" class="section hidden">
+            <h2>Momento 9</h2>
+            <div class="memory">
+                <img src="img/foto9.jpg" alt="Foto de Memória 9" class="memory-img">
+                <p>Incrível como o tempo voa, mas as memórias ficam.</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section12')">NEXT</button>
+        </section>
+        <section id="section12" class="section hidden">
+            <h2>Momento 10</h2>
+            <div class="memory">
+                <img src="img/foto10.jpg" alt="Foto de Memória 10" class="memory-img">
+                <p>Um momento único e especial!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section13')">NEXT</button>
+        </section>
+        <section id="section13" class="section hidden">
+            <h2>Momento 11</h2>
+            <div class="memory">
+                <img src="img/foto11.jpg" alt="Foto de Memória 11" class="memory-img">
+                <p>Dias que deixam saudades.</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section14')">NEXT</button>
+        </section>
+        <section id="section14" class="section hidden">
+            <h2>Momento 12</h2>
+            <div class="memory">
+                <img src="img/foto12.jpg" alt="Foto de Memória 12" class="memory-img">
+                <p>Momentos que valem ouro!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section15')">NEXT</button>
+        </section>
+        <section id="section15" class="section hidden">
+            <h2>Momento 13</h2>
+            <div class="memory">
+                <img src="img/foto13.jpg" alt="Foto de Memória 13" class="memory-img">
+                <p>Cada dia uma nova aventura.</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section16')">NEXT</button>
+        </section>
+        <section id="section16" class="section hidden">
+            <h2>Momento 14</h2>
+            <div class="memory">
+                <img src="img/foto14.jpg" alt="Foto de Memória 14" class="memory-img">
+                <p>Vivendo e curtindo a vida ao máximo!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section17')">NEXT</button>
+        </section>
+        <section id="section17" class="section hidden">
+            <h2>Momento 15</h2>
+            <div class="memory">
+                <img src="img/foto15.jpg" alt="Foto de Memória 15" class="memory-img">
+                <p>Encerrando com chave de ouro!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section18')">NEXT</button>
+        </section>
+        <section id="section18" class="section hidden">
+            <h2>Vídeos de Zoação</h2>
+            <div class="videos">
+                <video src="video1.mp4" controls></video>
+                <video src="video2.mp4" controls></video>
+                <video src="video3.mp4" controls></video>
+            </div>
+            <button class="next-btn" onclick="nextSection('section19')">NEXT</button>
+        </section>
+        <section id="section19" class="section hidden">
+            <h2>Final da Retrospectiva</h2>
+            <p>Espero que tenha gostado de relembrar esses momentos especiais! Que venham muitos mais anos de amizade e diversão.</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2025 Festa do Cachaceiro</p>
+    </footer>
+
+    <!-- Imagem do Presente -->
+    <img id="gift" src="img/presente.png" alt="Presente">
+
+    <!-- Popup de Parabéns -->
+    <div id="popup">
+        <h1>Parabéns, Anderson!</h1>
+        <p>Tudo de bom para você nesse dia especial, que nunca lhe falte cachaça e websexo. Mas para não ficar de muita viadagem, aqui um parabéns que vai representar todas as felicitações:</p>
+        <img src="img/anderson emo.jpeg" alt="Anderson">
+        <audio id="audioParabens" src="audio/parabéns tiringa.mp3" controls autoplay></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
