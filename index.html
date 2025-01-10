@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário do Cachaceiro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Parabéns, parcero. Segura essas predada</h1>
+    </header>
+    <main id="main-content">
+        <section id="section1" class="section active">
+            <h2>Makoto House Premium</h2>
+            <p>Aqui vamos relembrar momentos especiais e engraçados! Sente-se, relaxe e aproveite esta jornada de memórias.</p>
+            <button class="next-btn" onclick="nextSection('section2')">NEXT</button>
+        </section>
+        <section id="section2" class="section hidden">
+            <h2>Wanted: Anderson</h2>
+            <div class="wanted-poster">
+                <img src="img/Anderson Perfil.png" alt="Foto de Perfil" class="perfil-img">
+                <div class="bio">
+                    <h3>Procurado por:</h3>
+                    <p>Beber em excesso</p>
+                    <p>Ser CLT</p>
+                    <p>Jogar LoL</p>
+                </div>
+            </div>
+            <p class="caption">Se encontrar, devolver a Makoto House urgente.<br/> Recompensa: 2 reais!</p>
+            <button class="next-btn" onclick="nextSection('section3')">NEXT</button>
+        </section>
+        <section id="section3" class="section hidden">
+            <h2>Feliz Ano Novo do Ronaldo Arabe pra vocês</h2>
+            <div class="videos">
+                <video src="videos/Ano Novo Ronaldo.mp4" controls></video>
+            </div>
+            <button class="next-btn" onclick="nextSection('section4')">NEXT</button>
+        </section>
+        <section id="section4" class="section hidden">
+            <h2>Momento 1</h2>
+            <div class="memory">
+                <img src="img/Lobo Guara.jpeg" alt="Foto de Memória 1" class="memory-img">
+                <p>Só sucesso pra ti meu mano, muito lobo guara de nove rabo pra tu!</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section5')">NEXT</button>
+        </section>
+        <section id="section5" class="section hidden">
+            <h2>Momento 2</h2>
+            <div class="memory">
+                <img src="img/Ander deitado.jpeg" alt="Foto de Memória 2" class="memory-img">
+                <p>Um cara determinado e feliz como esse não tem igual. Olha essa cara de felicidade kkkk</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section6')">NEXT</button>
+        </section>
+        <section id="section6" class="section hidden">
+            <h2>Momento 3</h2>
+            <div class="memory">
+                <img src="img/Ander Anjo.jpeg" alt="Foto de Memória 3" class="memory-img">
+                <p>Mas todo mundo sabe que você é um santo brother</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section7')">NEXT</button>
+        </section>
+        <section id="section7" class="section hidden">
+            <h2>Momento 4</h2>
+            <div class="memory">
+                <img src="img/Ander Kwai.jpeg" alt="Foto de Memória 4" class="memory-img">
+                <p>Pra quem ta duvidando ta aqui a prova</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section9')">NEXT</button>
+        </section>
+        <section id="section8" class="section hidden">
+            <h2>E o cara também é do rock doido</h2>
+            <div class="videos">
+                <video src="videos/Ander das Cadeira.mp4" controls></video>
+            </div>
+            <button class="next-btn" onclick="nextSection('section4')">NEXT</button>
+        </section>
+        <section id="section9" class="section hidden">
+            <h2>Momento 6</h2>
+            <div class="memory">
+                <img src="img/Ander com a mãe do Guil.jpeg" alt="Foto de Memória 6" class="memory-img">
+                <p>Essa aqui eu vou fingir que não senti ciume pacero.</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section10')">NEXT</button>
+        </section>
+        <section id="section10" class="section hidden">
+            <h2>Momento 7</h2>
+            <div class="memory">
+                <img src="img/Duo zada.jpeg" alt="Foto de Memória 7" class="memory-img">
+                <p>Mas eu te considero então ta de boa</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section11')">NEXT</button>
+        </section>
+        <section id="section11" class="section hidden">
+            <h2>Momento 8</h2>
+            <div class="memory">
+                <img src="img/Ander Aniversario Antigo.jpeg" alt="Foto de Memória 8" class="memory-img">
+                <p>E é isso ai meu mano. Bora comemorar esse aniversario</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section12')">NEXT</button>
+        </section>
+        <section id="section12" class="section hidden">
+            <h2>Momento 9</h2>
+            <div class="memory">
+                <img src="img/Anderson Cabecinha.jpeg" alt="Foto de Memória 9" class="memory-img">
+                <p>Porque a Sabedoria vem com a idade, e nos seus 23 anos você ta assim</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section13')">NEXT</button>
+        </section>
+        <section id="section13" class="section hidden">
+            <h2>E vai ter que comemorar assim hoje kkkkk</h2>
+            <div class="videos">
+                <video src="videos/Ander do Carnavrau.mp4" controls></video>
+            </div>
+            <button class="next-btn" onclick="nextSection('section14')">NEXT</button>
+        </section>
+        <section id="section14" class="section hidden">
+            <h2>Momento 11</h2>
+            <div class="memory">
+                <img src="img/Anderson e Bruce.jpeg" alt="Foto de Memória 11" class="memory-img">
+                <p>Isso aqui não é uma  família, é um time</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section15')">NEXT</button>
+        </section>
+        <section id="section15" class="section hidden">
+            <h2>Momento 12</h2>
+            <div class="memory">
+                <img src="img/Anderson e Naldo sem cabeça.png" alt="Foto de Memória 12" class="memory-img">
+                <p>Sendo que você tem muitas histórias para contar, como a do preto sem cabeça</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section16')">NEXT</button>
+        </section>
+        <section id="section16" class="section hidden">
+            <h2>Momento 13</h2>
+            <div class="memory">
+                <img src="img/Ander 10.png" alt="Foto de Memória 13" class="memory-img">
+                <p>Você é 10</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section17')">NEXT</button>
+        </section>
+        <section id="section17" class="section hidden">
+            <h2>Momento 14</h2>
+            <div class="memory">
+                <img src="img/Ander Moto.jpeg" alt="Foto de Memória 14" class="memory-img">
+                <p>E se for dirigir, se lembre:</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section18')">NEXT</button>
+        </section>
+        <section id="section18" class="section hidden">
+            <h2>Momento 15</h2>
+            <div class="memory">
+                <img src="img/Ander caido.jpeg" alt="Foto de Memória 15" class="memory-img">
+                <p>Cuidado pra não cair por ai meu parcero kkkkkk</p>
+            </div>
+            <button class="next-btn" onclick="nextSection('section20')">NEXT</button>
+        </section>
+        <section id="section20" class="section hidden">
+            <h2>Fim da Retrospectiva</h2>
+            <p>Espero que tenha gostado de relembrar esses momentos especiais! Que venham muitos mais anos de amizade e diversão.</p>
+            <p>Agradecimento a todos que me mandaram os conteudos e vai tifudê Guilherme</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2025 CLT Todos os direitos não reservados</p>
+    </footer>
+
+    <!-- Imagem do Presente -->
+    <img id="gift" src="img/presente.png" alt="Presente">
+
+    <!-- Popup de Parabéns -->
+    <div id="popup">
+        <h1>Parabéns, Anderson!</h1>
+        <p>Tudo de bom para você nesse dia especial, que nunca lhe falte cachaça, dinheiro e websexo. Mas para não ficar de muita viadagem, aqui um parabéns que vai representar todas as felicitações:</p>
+        <img src="img/Skol Ander.jpeg" alt="Anderson">
+        <audio id="audioParabens" src="audio/parabéns tiringa.mp3" controls autoplay></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
